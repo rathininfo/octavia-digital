@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen bg-[#0B0B0D] pt-28 overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-screen bg-[#0B0B0D] pt-10 overflow-hidden py-8">
 
       {/* Background glow */}
       <div className="absolute inset-0 flex justify-center">
@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-12 mt-10">
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold">
             Start Distributing →
           </button>
@@ -39,8 +39,8 @@ export default function Hero() {
       </div>
 
       {/* Scroll mouse icon */}
-      <div className="absolute bottom-8 flex justify-center w-full">
-        <div className="w-5 h-10 border-2 border-white/40 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-10 flex justify-center w-full">
+        <div className="w-10 h-20 border-2 border-white/40 rounded-full flex items-center justify-center">
           <div className="w-1 h-2 bg-orange-500 rounded"></div>
         </div>
       </div>
