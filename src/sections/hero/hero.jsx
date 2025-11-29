@@ -1,49 +1,53 @@
 export default function Hero() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen bg-[#0B0B0D] pt-10 overflow-hidden py-8">
+    <section className="relative flex items-center justify-center min-h-[90vh] md:min-h-screen bg-background pt-32 pb-40 overflow-hidden">
 
-      {/* Background glow */}
-      <div className="absolute inset-0 flex justify-center">
-        <div className="w-[700px] h-[700px] bg-orange-600/5 rounded-full blur-[180px]"></div>
+      {/* Background Glow */}
+      <div className="absolute inset-0 flex justify-center pointer-events-none">
+        <div className="w-[350px] h-[350px] md:w-[600px] md:h-[600px] lg:w-[750px] lg:h-[750px] bg-accent/5 rounded-full blur-[160px] md:blur-[200px]"></div>
       </div>
 
-      <div className="relative z-10 text-center px-6">
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 md:px-8 max-w-4xl mx-auto">
+
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-sm mb-6">
+        <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-accent px-4 py-2 rounded-full text-sm md:text-base mb-6">
           <span>🎵</span> The Future of Music Distribution
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+        <h1 className="text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-heading">
           Your Music.
           <br />
-          <span className="text-orange-500">Everywhere.</span>
+          <span className="text-accent">Everywhere.</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-white/70 mt-6 max-w-2xl mx-auto text-lg">
+        <p className="text-paragraph mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
           Distribute your music to 150+ streaming platforms worldwide. Keep
           100% of your royalties. Start your journey with Octavia Digital today.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-12 mt-10">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-10 mt-10">
+          <button className="bg-accent hover:bg-accent-dark transition duration-200 text-foreground px-8 py-3 sm:px-10 sm:py-4 rounded-xl font-semibold text-base sm:text-lg">
             Start Distributing →
           </button>
 
-          <button className="border border-orange-500/30 hover:border-orange-500 text-white px-8 py-3 rounded-xl font-semibold flex items-center gap-2">
+          <button className="border border-accent/30 hover:border-accent transition duration-200 text-foreground px-8 py-3 sm:px-10 sm:py-4 rounded-xl font-semibold flex items-center gap-2 text-base sm:text-lg">
             ▶ See How It Works
           </button>
         </div>
+
       </div>
 
-      {/* Scroll mouse icon */}
+      {/* Scroll Icon */}
       <div className="absolute bottom-10 flex justify-center w-full">
-        <div className="w-10 h-20 border-2 border-white/40 rounded-full flex items-center justify-center">
-          <div className="w-1 h-2 bg-orange-500 rounded"></div>
+        <div className="w-8 h-16 sm:w-10 sm:h-20 border-2 border-muted rounded-full flex items-center justify-center">
+          <div className="w-1 h-2 bg-accent rounded animate-bounce"></div>
         </div>
       </div>
+
     </section>
   );
 }
