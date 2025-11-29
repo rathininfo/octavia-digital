@@ -19,7 +19,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-[var(--paragraph-color)]">
-          <Link href="/why-octavia" className="hover:text-[var(--accent)] transition">Why Octavia</Link>
+          <Link href="/" className="hover:text-[var(--accent)] transition">Home</Link>
           <Link href="/services" className="hover:text-[var(--accent)] transition">Services</Link>
           <Link href="/partners" className="hover:text-[var(--accent)] transition">Partners</Link>
           <Link href="/pricing" className="hover:text-[var(--accent)] transition">Pricing</Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-[#0A0A0F] border-t border-[#1F1F2A] py-4 px-6">
           <div className="flex flex-col gap-4 text-[var(--paragraph-color)]">
-            <Link href="/why-octavia" className="hover:text-[var(--accent)]">Why Octavia</Link>
+            <Link href="/" className="hover:text-[var(--accent)]">Home</Link>
             <Link href="/services" className="hover:text-[var(--accent)]">Services</Link>
             <Link href="/partners" className="hover:text-[var(--accent)]">Partners</Link>
             <Link href="/pricing" className="hover:text-[var(--accent)]">Pricing</Link>
