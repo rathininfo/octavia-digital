@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0A0A0F]/90 backdrop-blur-lg border-b border-[#1F1F2A]">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto py-4 flex items-center justify-between">
         
         {/* Logo */}
         <Link href="/" className="flex items-center">

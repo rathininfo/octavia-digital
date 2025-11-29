@@ -1,7 +1,7 @@
 export default function ServiceHero() {
   return (
-    <section className="py-32 px-6 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-32 bg-background max-w-7xl mx-auto">
+      <div className="">
         
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-accent/10 border border-accent/20 text-accent">
@@ -9,7 +9,7 @@ export default function ServiceHero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-heading mt-6 leading-snug">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-heading mt-6 leading-snug">
           Everything You Need to <span className="text-accent">Succeed</span>
         </h1>
 

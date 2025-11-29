@@ -1,7 +1,7 @@
 export default function StartJourney() {
   return (
-    <section className="py-20 bg-[#0d0d0d] text-center">
-      <h2 className="text-3xl font-bold text-white">
+    <section className="py-20 bg-[#0B0E14] text-center mx-auto">
+      <h2 className="text-6xl font-bold text-white">
         Ready to Start Your <span className="text-orange-400">Journey?</span>
       </h2>
 
