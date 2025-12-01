@@ -1,6 +1,6 @@
 export default function PartnersHero() {
   return (
-    <section className="py-24 text-center bg-[#0B0E14]">
+    <section className="py-24 text-center bg-[#0D0F15]">
       <div className="inline-block px-4 py-1 border border-orange-500 text-orange-500 rounded-full text-[14px] mb-6">
         Our Partners
       </div>

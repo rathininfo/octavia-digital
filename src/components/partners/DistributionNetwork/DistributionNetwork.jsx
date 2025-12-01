@@ -1,31 +1,52 @@
-import PlatformCard from "../PlatformCard/PlatformCard";
 
+
+import {
+  Music,
+  PlayCircle,
+  Disc3,
+  Radio,
+  Headphones,
+  Video,
+  Mic2,
+  SatelliteDish,
+  Library,
+  Globe,
+  Rss,
+  Facebook,
+  Instagram,
+  Barrel,
+  Tally4,
+  Music3Icon,
+  Podcast,
+} from "lucide-react";
+import PlatformCard from "../PlatformCard/PlatformCard";
 
 export default function DistributionNetwork() {
   const platforms = [
-    { name: "Spotify", category: "Streaming" },
-    { name: "Apple Music", category: "Streaming" },
-    { name: "Amazon Music", category: "Streaming" },
-    { name: "YouTube Music", category: "Streaming" },
-    { name: "Tidal", category: "Streaming" },
-    { name: "Pandora", category: "Streaming" },
-    { name: "SoundCloud", category: "Streaming" },
-    { name: "TikTok", category: "Social" },
-    { name: "Instagram/Facebook", category: "Social" },
-    { name: "Snapchat", category: "Social" },
-    { name: "Triller", category: "Social" },
-    { name: "Shazam", category: "Discovery" },
-    { name: "iHeartRadio", category: "Radio" },
-    { name: "Audiomack", category: "Streaming" },
-    { name: "Napster", category: "Streaming" },
-    { name: "Tencent", category: "Streaming" },
-    { name: "NetEase", category: "Streaming" },
-    { name: "JioSaavn", category: "Streaming" },
-    { name: "Anghami", category: "Streaming" },
-    { name: "Boomplay", category: "Streaming" },
-    { name: "KKBox", category: "Streaming" },
-    { name: "Yandex Music", category: "Streaming" },
-    { name: "VK Music", category: "Streaming" },
+    { name: "Spotify", category: "Streaming", icon: <Headphones size={24} /> },
+    { name: "Apple Music", category: "Streaming", icon: <Music size={24} /> },
+    { name: "Amazon Music", category: "Streaming", icon: <Disc3 size={24} /> },
+    { name: "YouTube Music", category: "Streaming", icon: <PlayCircle size={24} /> },
+    { name: "Deezer", category: "Streaming", icon: <Library size={24} /> },
+    { name: "Tidal", category: "Streaming", icon: <Globe size={24} /> },
+    { name: "Pandora", category: "Streaming", icon: <Rss size={24} /> },
+    { name: "SoundCloud", category: "Streaming", icon: <Radio size={24} /> },
+    { name: "TikTok", category: "Social", icon: <Video size={24} /> },
+    { name: "Instagram", category: "Social", icon: <Instagram size={24} /> },
+    { name: "Facebook", category: "Social", icon: <Facebook size={24} /> },
+    { name: "Snapchat", category: "Social", icon: <Video size={24} /> },
+    { name: "Triller", category: "Social", icon: <Barrel size={24} /> },
+    { name: "Shazam", category: "Discovery", icon: <SatelliteDish size={24} /> },
+    { name: "iHeartRadio", category: "Radio", icon: <Radio size={24} /> },
+    { name: "Audiomack", category: "Streaming", icon: <Mic2 size={24} /> },
+    { name: "Tencent", category: "Streaming", icon: <Tally4 size={24} /> },
+    { name: "NetEase", category: "Streaming", icon: <Globe size={24} /> },
+    { name: "JioSaavn", category: "Streaming", icon: <Music size={24} /> },
+    { name: "Anghami", category: "Streaming", icon: <Podcast size={24} /> },
+    { name: "Boomplay", category: "Streaming", icon: <Library size={24} /> },
+    { name: "KKBox", category: "Streaming", icon: <Disc3 size={24} /> },
+    { name: "Yandex Music", category: "Streaming", icon: <Music3Icon size={24} /> },
+    { name: "VK Music", category: "Streaming", icon: <Headphones size={24} /> }
   ];
 
   return (
@@ -43,7 +64,7 @@ export default function DistributionNetwork() {
         {platforms.map((p, index) => (
           <PlatformCard
             key={index}
-            icon={<i className="ri-music-2-fill"></i>}
+            icon={p.icon}
             name={p.name}
             category={p.category}
           />
