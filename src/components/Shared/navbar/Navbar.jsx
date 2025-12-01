@@ -13,8 +13,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center bg-white px-4 py-1 rounded-2xl">
-        <Image src={Logo} alt="Octavia Digital Logo" height={20} width={130} priority />
+        <Link href="/" className="flex items-center">
+        <Image src={Logo} alt="Octavia Digital Logo" height={20} width={120} priority />
         </Link>
 
         {/* Desktop Menu */}
