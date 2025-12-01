@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/logo.png"; // adjust the path according to your folder structure
+import Logo from "@/assets/images/logo/logo.png"; // adjust the path according to your folder structure
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,8 +13,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center">
-        <Image src={Logo} alt="Octavia Digital Logo" width={55} priority />
+        <Link href="/" className="flex items-center bg-white px-4 py-1 rounded-2xl">
+        <Image src={Logo} alt="Octavia Digital Logo" height={20} width={130} priority />
         </Link>
 
         {/* Desktop Menu */}
