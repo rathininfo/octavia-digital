@@ -1,5 +1,3 @@
-
-
 import {
   Music,
   PlayCircle,
@@ -19,6 +17,7 @@ import {
   Music3Icon,
   Podcast,
 } from "lucide-react";
+
 import PlatformCard from "../PlatformCard/PlatformCard";
 
 export default function DistributionNetwork() {
@@ -46,13 +45,14 @@ export default function DistributionNetwork() {
     { name: "Boomplay", category: "Streaming", icon: <Library size={24} /> },
     { name: "KKBox", category: "Streaming", icon: <Disc3 size={24} /> },
     { name: "Yandex Music", category: "Streaming", icon: <Music3Icon size={24} /> },
-    { name: "VK Music", category: "Streaming", icon: <Headphones size={24} /> }
+    { name: "VK Music", category: "Streaming", icon: <Headphones size={24} /> },
   ];
 
   return (
     <section className="py-28 bg-[#0B0E14]">
-      <div className="text-center">
-        <h2 className="text-white text-[32px] font-bold">
+      {/* Heading */}
+      <div className="text-center px-4">
+        <h2 className="text-white text-4xl md:text-6xl font-bold">
           Distribution <span className="text-orange-500">Network</span>
         </h2>
         <p className="text-gray-400 mt-2 text-[16px]">
@@ -60,6 +60,7 @@ export default function DistributionNetwork() {
         </p>
       </div>
 
+      {/* Grid */}
       <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-6 max-w-7xl mx-auto px-6">
         {platforms.map((p, index) => (
           <PlatformCard
@@ -71,6 +72,7 @@ export default function DistributionNetwork() {
         ))}
       </div>
 
+      {/* Footer */}
       <p className="text-center text-gray-500 mt-6 text-[15px]">
         + 120 more platforms worldwide
       </p>

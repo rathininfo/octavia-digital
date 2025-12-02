@@ -1,7 +1,30 @@
 export default function PlatformCard({ icon, name, category }) {
   return (
-    <div className="bg-[#14171F] p-6 rounded-xl border border-[#1F232C] hover:border-orange-500 transition cursor-pointer">
-      <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#1F232C] text-orange-500 text-[20px] mb-4">
+    <div
+      className="
+        bg-[#14171F]
+        p-6
+        rounded-xl
+        border border-[#1F232C]
+        hover:border-orange-500
+        transition
+        cursor-pointer
+        flex flex-col
+        items-center
+        text-center
+      "
+    >
+      <div
+        className="
+          w-12 h-12
+          flex items-center justify-center
+          rounded-lg
+          bg-[#1F232C]
+          text-orange-500
+          text-[20px]
+          mb-4
+        "
+      >
         {icon}
       </div>
 
